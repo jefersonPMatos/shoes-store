@@ -4,10 +4,10 @@ import { css } from "styled-components";
 const Container = styled.button`
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
-  font-size: 39px;
+  font-size: ${(props) => props.fs || "39px"};
   font-weight: 600;
   border: 0;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   width: ${(props) => props.w || "403px"};
   height: ${(props) => props.h || "99px"};
   ${(props) => {
@@ -19,7 +19,6 @@ const Container = styled.button`
         &:hover {
           background-color: #b99d81;
         }
-      
       `;
     } else {
       return css`

@@ -11,8 +11,6 @@ import {
 
 import { Container, Link, List, ListItem, Paragraph, H1 } from "./styles";
 
-import logo from "../../assets/logo.png";
-import { Column } from "../Column";
 import { Box } from "../Box";
 
 export function Footer() {
